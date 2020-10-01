@@ -12,7 +12,10 @@ public class StudentController {
         studentServices = new StudentServicesImpl();
         studentServices.createStudent(student);
     }
-
+    public  static void removeStudent(){
+        studentServices=new StudentServicesImpl();
+        studentServices.deleteStudent();
+    }
     public static void main(String[] args) {
         System.out.println("enter 1 to insert     ");
         System.out.println("enter 2 to delete a student ");
@@ -31,5 +34,8 @@ public class StudentController {
             student.setStudentPhone("432169876543");
             student.setStudentAge(21);
             addStudent(student); }
+        if (operationnumper==2){
+            removeStudent();
+        }
     }
 }

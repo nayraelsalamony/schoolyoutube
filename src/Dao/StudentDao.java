@@ -24,6 +24,17 @@ public class StudentDao {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        return null;
+        return null; }
+    public boolean deleteStudent(int studentId) {
+        try {
+            pre = connection.prepareStatement("DELETE FROM youtubeschool.student WHERE idstudent = ? ");
+            pre.setInt(1,studentId);
+            pre.executeUpdate();
+            return true;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return false;
     }
+
 }
