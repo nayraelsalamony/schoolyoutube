@@ -12,7 +12,10 @@ public class StudentController {
         studentServices = new StudentServicesImpl();
         studentServices.createStudent(student);
     }
-
+    public static void searchByPhone(String studentPhone){
+        studentServices=new StudentServicesImpl();
+        studentServices.searchByPhone(studentPhone);
+    }
     public static void main(String[] args) {
         System.out.println("enter 1 to insert     ");
         System.out.println("enter 2 to delete a student ");
@@ -31,5 +34,10 @@ public class StudentController {
             student.setStudentPhone("432169876543");
             student.setStudentAge(21);
             addStudent(student); }
+
+    if(operationnumper == 5){
+    System.out.println("enter Student phone to search by it ");
+    String phone =scanner.next();
+    searchByPhone(phone);}
     }
 }
