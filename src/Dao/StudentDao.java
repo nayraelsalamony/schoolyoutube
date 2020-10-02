@@ -4,6 +4,7 @@ import Model.Student;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class StudentDao {
@@ -26,4 +27,14 @@ public class StudentDao {
         }
         return null;
     }
+    public ResultSet selectByName(String studentName){
+        try {
+            pre = connection.prepareStatement("SELECT * FROM youtubeschool.student WHERE studentname = ? ");
+            pre.setString(1,studentName);
+            ResultSet resultSet= pre.executeQuery();
+            return  resultSet;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null ;  }
 }
