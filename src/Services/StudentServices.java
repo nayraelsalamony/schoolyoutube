@@ -10,4 +10,5 @@ public interface StudentServices {
     public ResultSet selectAll();
     public ResultSet selectStudentByName(String studentName);
     public ResultSet searchByPhone(String studentPhone);
+    public void updateStudent(int studentId);
 }
