@@ -19,7 +19,14 @@ public class StudentServicesImpl implements StudentServices {
 
     @Override
     public void deleteStudent() {
-
+        studentDao=new StudentDao();
+        System.out.println("please inter the studentId which you need to delete it");
+        int studentId=input.nextInt();
+        boolean flag= studentDao.deleteStudent(studentId);
+        if(flag==true)
+            System.out.println("delete is done");
+        else
+            System.out.println("can not delete");
     }
 
     @Override
