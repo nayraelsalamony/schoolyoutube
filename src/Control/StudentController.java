@@ -12,9 +12,14 @@ public class StudentController {
         studentServices = new StudentServicesImpl();
         studentServices.createStudent(student);
     }
+
     public  static void removeStudent(){
         studentServices=new StudentServicesImpl();
         studentServices.deleteStudent();
+    }
+    public  static void showAllStudent(){
+        studentServices=new StudentServicesImpl();
+        studentServices.selectAll();
     }
     public static void main(String[] args) {
         System.out.println("enter 1 to insert     ");
@@ -34,8 +39,12 @@ public class StudentController {
             student.setStudentPhone("432169876543");
             student.setStudentAge(21);
             addStudent(student); }
-        if (operationnumper==2){
+
+        if (operationnumper==2) {
             removeStudent();
+        }
+        if(operationnumper == 3){
+            showAllStudent();
         }
     }
 }

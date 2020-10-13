@@ -31,6 +31,24 @@ public class StudentServicesImpl implements StudentServices {
 
     @Override
     public ResultSet selectAll() {
+        studentDao=new StudentDao();
+        ResultSet resultSet1=studentDao.select();
+
+        try{
+            while (resultSet1.next()) {
+                Student student=new Student();
+                student.setStudentId(resultSet1.getInt("idstudent"));
+                student.setStudentName(resultSet1.getString("studentname"));
+                student.setStudentEmail(resultSet1.getString("studentemail"));
+                student.setStudentLevel(resultSet1.getString("studentlevel"));
+                student.setStudentAderess(resultSet1.getString("studentaddress"));
+                student.setStudentPhone(resultSet1.getString("studenphone"));
+                student.setStudentAge(resultSet1.getInt("studenage"));
+                System.out.println(student);
+            }}
+        catch (Exception e){
+            e.printStackTrace();
+        }
         return null;
     }
 
