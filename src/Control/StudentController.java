@@ -21,9 +21,13 @@ public class StudentController {
         studentServices = new StudentServicesImpl();
         studentServices.selectAll();
     }
-    public static void searchByName(String studentName){
-        studentServices=new StudentServicesImpl();
+    public static void searchByName(String studentName) {
+        studentServices = new StudentServicesImpl();
         studentServices.selectStudentByName(studentName);
+    }
+    public static void searchByPhone(String studentPhone){
+        studentServices=new StudentServicesImpl();
+        studentServices.searchByPhone(studentPhone);
     }
     public static void main(String[] args) {
         System.out.println("enter 1 to insert     ");
@@ -54,6 +58,11 @@ public class StudentController {
             String name = scanner.next();
             searchByName(name);
         }
-        }
+    if(operationnumper == 5){
+    System.out.println("enter Student phone to search by it ");
+    String phone =scanner.next();
+    searchByPhone(phone);}
+
     }
+}
 

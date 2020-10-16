@@ -37,8 +37,7 @@ public class StudentDao {
         }
         return false;
     }
-
-    public ResultSet select(){
+    public ResultSet select() {
         try {
             pre = connection.prepareStatement("SELECT * FROM youtubeschool.student");
             ResultSet resultSet= pre.executeQuery();
@@ -46,16 +45,27 @@ public class StudentDao {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        return null ;
-    }
-    public ResultSet selectByName(String studentName){
-        try {
-            pre = connection.prepareStatement("SELECT * FROM youtubeschool.student WHERE studentname = ? ");
-            pre.setString(1,studentName);
-            ResultSet resultSet= pre.executeQuery();
-            return  resultSet;
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            return null;
         }
-        return null ;  }
+        public ResultSet selectByName(String studentName){
+            try {
+                pre = connection.prepareStatement("SELECT * FROM youtubeschool.student WHERE studentname = ? ");
+                pre.setString(1,studentName);
+                ResultSet resultSet= pre.executeQuery();
+                return  resultSet;
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+            return null ;  }
+        public ResultSet selectByPhone(String studentPhone){
+            try {
+                pre = connection.prepareStatement("SELECT * FROM youtubeschool.student WHERE studenphone = ? ");
+                pre.setString(1,studentPhone);
+                ResultSet resultSet= pre.executeQuery();
+                return  resultSet;
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+            return null ;
+        }
 }
