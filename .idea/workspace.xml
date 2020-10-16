@@ -43,18 +43,23 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="WindowStateProjectService">
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1601524251783">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1601661674897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+<<<<<<< HEAD
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1601524251783" />
     <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601526834843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1601526834843" />
+=======
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1601661674897" />
+>>>>>>> update-Student
     <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1601344774433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601344774433" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1602623442342">
       <screen x="0" y="0" width="1366" height="728" />
@@ -90,6 +95,24 @@
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601657703685" />
 >>>>>>> search-by-name
+=======
+    <state width="1345" height="142" key="GridCell.Tab.0.bottom" timestamp="1601670256129">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="142" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601670256129" />
+    <state width="1345" height="142" key="GridCell.Tab.0.center" timestamp="1601670256129">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="142" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601670256129" />
+    <state width="1345" height="142" key="GridCell.Tab.0.left" timestamp="1601670256128">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="142" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601670256128" />
+    <state width="1345" height="142" key="GridCell.Tab.0.right" timestamp="1601670256129">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="142" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601670256129" />
+>>>>>>> update-Student
     <state x="163" y="0" key="SettingsEditor" timestamp="1601344780335">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

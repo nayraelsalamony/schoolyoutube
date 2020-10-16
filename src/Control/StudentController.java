@@ -25,9 +25,13 @@ public class StudentController {
         studentServices = new StudentServicesImpl();
         studentServices.selectStudentByName(studentName);
     }
-    public static void searchByPhone(String studentPhone){
-        studentServices=new StudentServicesImpl();
+    public static void searchByPhone(String studentPhone) {
+        studentServices = new StudentServicesImpl();
         studentServices.searchByPhone(studentPhone);
+    }
+    public static void ubdateStudent(int studentId) {
+        studentServices = new StudentServicesImpl();
+        studentServices.updateStudent(studentId);
     }
     public static void main(String[] args) {
         System.out.println("enter 1 to insert     ");
@@ -63,6 +67,12 @@ public class StudentController {
     String phone =scanner.next();
     searchByPhone(phone);}
 
+        if(operationnumper == 6){
+            System.out.println("plese inter student id which you need to update it");
+            int id =scanner.nextInt();
+           System.out.println(" plese enter name email level address phone age  int the same order");
+            ubdateStudent(id) ;
+        }
     }
 }
 

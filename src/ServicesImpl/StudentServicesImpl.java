@@ -95,4 +95,11 @@ public class StudentServicesImpl implements StudentServices {
         }
         return null;
     }
+
+    @Override
+    public void updateStudent(int studentId) {
+        studentDao=new StudentDao();
+       Student student1=studentDao.updateById(studentId);
+        System.out.println(student1);
+    }
 }
